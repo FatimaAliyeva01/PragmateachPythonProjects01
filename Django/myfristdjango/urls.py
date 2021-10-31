@@ -15,21 +15,31 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from backend import views as backend_views
+# from backend import views as backend_views
+#from backend import views (about,home) - bu formadada yazmaq olargi
 from blog import views
 
 # urlpatterns = [
 #     path('admin/', admin.site.urls),
 #     path('home/',backend.views.home),
+
+
+
 #     # path('about/',views.about, name="Aboutpage")
 #     #Yaratdigimiz applari burda qeyd ediriq
 
+# urlpatterns = [
+#     path('blog/', views.about )
+
+# ]
 # ]
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.blog_list),
-    path('about/',backend_views.about),
-    path('blog/', views.about )
+    path('blog_list', views.blog_list),
+    #path('about/',backend_views.about),
+    path('blog/', views.about ),
+    path('blog_detail', views.blog_detail),
+    path('home', views.about)
     #Yaratdigimiz applari burda qeyd ediriq.
     #burdakilar funksiyalr name ise funsksiylara adlandirma
 

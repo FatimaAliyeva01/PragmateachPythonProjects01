@@ -20,16 +20,40 @@
               <!-- # Yerine sehifemizin basligini qeyd etmek ucun ucundu  -->
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'home'  %}">Blog</a>
+              <a class="nav-link" href="{ % url 'blog:blog_details'  % }">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'salam' %}">About</a>
+              <a class="nav-link" href="{ % url 'about' % }">About</a>
         </li>
           </ul>
         </div>
       </nav>
     <h1>My blogs!</h1>
 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="{ % url 'blog:blog_detail' 1 % }">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="{ % url 'blog:blog_detail' 2 % }">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
