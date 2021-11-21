@@ -18,6 +18,8 @@ from django.urls import path
 # from backend import views as backend_views
 #from backend import views (about,home) - bu formadada yazmaq olargi
 from blog import views
+# from django.urls import path,include
+# path('blog/',include('blog urls',namespace='blog')) # yazmaqda meqsedimiz blog sehifesinin urls.py
 
 # urlpatterns = [
 #     path('admin/', admin.site.urls),
